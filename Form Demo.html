@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<!-- Form tag enables form data -->
+<form>
+	<label for="firstname">First Name:</label>
+		<input id="firstname" type="text" placeholder="firstname" required>
+
+	<label for="lastname">Last Name:</label>
+		<input id="lastname" type="text" placeholder="lastname" required>
+
+	<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="password" required>
+
+
+	<input type="submit" name="">
+</form>
+
+<p>Are you an Warrior or Mage?</p>
+
+<!-- RADIO BUTTON TRICK -the name is not the name that is displayed, it is a custom named attribute. Because they are the same, the 2 names link the 2 inputs thus allowing the radio button to select one of each -->
+<form>
+	<label for="warrior">Warrior</label>
+	<input id="warrior" type="radio" name="classChoice" value="WARRIOR">
+	<label for="mage">Mage</label>
+	<input id="mage" type="radio" name="classChoice" value="MAGE">
+
+	<p>What is your way of fighting?</p>
+
+	<select name="technique">
+		<option>Balance of the forces</option>
+		<option>Brute Force</option>
+		<option>Slow and Steady</option>
+		<option>Swift and Cunning</option>
+	</select>
+
+	<button>Select</button>
+</form>
+
+<form>
+	<p>How are you feeling right now?</p>
+	<textarea name="paragraph" rows="10" cols="50"></textarea>
+</form>
+
+</body>
+</html>
